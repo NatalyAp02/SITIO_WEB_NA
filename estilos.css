@@ -272,6 +272,10 @@ nav ul li a
     align-items: center; 
     padding: 1rem 0;
   }
+  header, nav 
+  {
+    padding: 1rem;
+  }
 }
 
 footer 
