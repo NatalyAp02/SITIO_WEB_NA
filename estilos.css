@@ -1,0 +1,268 @@
+body 
+{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header, nav 
+{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul 
+{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+nav ul li a 
+{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo 
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo-img 
+{
+  width: 30px;  
+  height: auto;
+  margin-right: 10px; 
+}
+
+.logo a 
+{
+  color: white;
+  text-decoration: none;
+}
+
+.categorias 
+{
+  text-align: center;
+  padding: 2rem;
+}
+
+.catalogo 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1 rem; 
+  margin-top: 2rem;
+  justify-items: center; 
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) 
+{
+  .catalogo 
+  {
+    grid-template-columns: 1fr;  
+    padding: 0 1rem;  
+  }
+}
+
+.categoria 
+{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  width: 300px;
+}
+
+
+.categoria img 
+{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.categoria button 
+{
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.titulo-pagina 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero 
+{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideShow 15s infinite;
+  opacity: 0;
+}
+
+.slide:nth-child(1) 
+{
+  animation-delay: 0s;
+}
+.slide:nth-child(2) 
+{
+  animation-delay: 5s;
+}
+.slide:nth-child(3) 
+{
+  animation-delay: 10s;
+}
+
+@keyframes slideShow 
+{
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.compra-container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(233, 233, 233); 
+}
+
+.compra-box 
+{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgb(204, 204, 204);
+}
+
+.compra-box h2 
+{
+  color: rgb(51, 51, 51);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.compra-box p 
+{
+  color: rgb(85, 85, 85);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.compra-box button 
+{
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.descuento {
+  background-color: #f1f1f1; /* Fondo claro similar al de la página */
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.descuento-contenido 
+{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.descuento h2 
+{
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.descuento p 
+{
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1rem 0;
+}
+
+footer 
+{
+  background-color: black; 
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  font-weight: normal;
+}
+
+footer p 
+{
+  font-size: 0.9rem;
+}
+
+footer .social-media 
+{
+  margin-top: 1rem;
+}
+
+footer .social-media a 
+{
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-media a:hover 
+{
+  color: rgb(242, 181, 67);
+}
+
+
+
+
