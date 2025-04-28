@@ -3,6 +3,7 @@ body
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   background-color: white;
 }
 
@@ -55,14 +56,18 @@ nav ul li a
 {
   text-align: center;
   padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .catalogo 
 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(3, 1fr); 
   gap: 1rem; 
   margin-top: 2rem;
+  justify-content: center;
   justify-items: center; 
   padding: 0 2rem;
 }
@@ -107,6 +112,15 @@ nav ul li a
   cursor: pointer;
 }
 
+.categorias-principal .catalogo 
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
 .titulo-pagina 
 {
   display: flex;
@@ -117,6 +131,8 @@ nav ul li a
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
+  width: 100%;
+  box-sizing: border-box; 
 }
 
 .hero 
