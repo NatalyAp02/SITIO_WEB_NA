@@ -205,8 +205,9 @@ nav ul li a
   cursor: pointer;
 }
 
-.descuento {
-  background-color: #f1f1f1; /* Fondo claro similar al de la página */
+.descuento 
+{
+  background-color: rgb(241, 241, 241);
   padding: 2rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -222,14 +223,14 @@ nav ul li a
 .descuento h2 
 {
   font-size: 2rem;
-  color: #333;
+  color: rgb(51, 51, 51);
   font-weight: bold;
 }
 
 .descuento p 
 {
   font-size: 1.2rem;
-  color: #555;
+  color: rgb(85, 85, 85);
   margin: 1rem 0;
 }
 
@@ -247,6 +248,13 @@ nav ul li a
   {
     width: 100%;
     height: auto;
+  }
+  nav ul 
+  {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center; 
+    padding: 1rem 0;
   }
 }
 
